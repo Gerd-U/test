@@ -1,0 +1,29 @@
+
+.feature-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 30px;
+}
+.card {
+  background: white;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 5px 25px #173b2d13;
+  flex: 1;
+}
+.card img {
+  height: 40rem;
+  width: 100%;
+  object-fit: cover;
+}
+.tile-copy {
+  padding: 23px;
+}
+.tile h3 {
+  font-size: 24px;
+  margin: 0 0 10px;
+}
+.tile p {
+  margin: 0;
+}

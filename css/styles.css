@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap");
+:root {
+  --forest: #183c33;
+  --cream: #faf7f0;
+  --gold: #d7a45b;
+  --ink: #27352f;
+  --mute: #5f6963;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background: var(--cream);
+  color: var(--ink);
+  font-family: "DM Sans", Arial, sans-serif;
+  line-height: 1.6;
+}
+h1,
+h2,
+h3 {
+  font-family: "Playfair Display", Georgia, serif;
+  line-height: 1.15;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+.container {
+  width: min(1100px, calc(100% - 40px));
+  margin-inline: auto;
+}
+.site-header {
+  background: #fff;
+  border-bottom: 1px solid #e8e7df;
+}
+.nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  min-height: 78px;
+}
+.logo {
+  font-family: Georgia, serif;
+  font-size: 29px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  color: var(--forest);
+}
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 23px;
+  flex-wrap: wrap;
+}
+.nav-links a {
+  font-size: 14px;
+  font-weight: 700;
+}
+.nav-links a:hover,
+.nav-links a[aria-current="page"] {
+  color: #a17034;
+}
+.hero {
+  background: var(--forest);
+  color: white;
+}
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 40px;
+  align-items: center;
+  min-height: 440px;
+  padding-block: 55px;
+}
+.hero h1 {
+  font-size: clamp(36px, 5vw, 65px);
+  margin: 10px 0 20px;
+}
+.hero p {
+  max-width: 540px;
+  color: #dce6df;
+}
+.hero img {
+  width: 100%;
+  border-radius: 18px;
+  box-shadow: 0 18px 45px #071f183d;
+}
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--gold);
+}
+.btn {
+  display: inline-block;
+  background: var(--gold);
+  color: #21372d;
+  padding: 12px 25px;
+  border-radius: 4px;
+  font-weight: 700;
+  margin-top: 10px;
+}
+.btn:hover {
+  filter: brightness(0.93);
+}
+.section {
+  padding-block: 68px;
+}
+.section h2 {
+  font-size: 36px;
+  margin: 0 0 15px;
+}
+.muted {
+  color: var(--mute);
+}
+.feature-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 30px;
+}
+.tile {
+  background: white;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 5px 25px #173b2d13;
+  flex: 1;
+}
+.tile img {
+  height: 190px;
+  width: 100%;
+  object-fit: cover;
+}
+.tile-copy {
+  padding: 23px;
+}
+.tile h3 {
+  font-size: 24px;
+  margin: 0 0 10px;
+}
+.tile p {
+  margin: 0;
+}
+.statement {
+  background: #ecf1e9;
+  padding: 26px;
+  border-left: 5px solid var(--gold);
+  border-radius: 5px;
+  margin-top: 38px;
+}
+.statement p {
+  margin: 0;
+}
+.statement-title {
+  font-size: 19px;
+  font-weight: 700;
+  color: var(--forest);
+}
+.section-heading {
+  max-width: 690px;
+}
+.site-footer {
+  background: #102b24;
+  color: #eee;
+  padding: 35px 0;
+}
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.footer-inner p {
+  margin: 0;
+  font-size: 13px;
+}
+.page-hero {
+  background: var(--forest);
+  color: white;
+  padding: 55px 0;
+}
+.page-hero h1 {
+  font-size: 48px;
+  margin: 10px 0;
+}
+.page-hero p {
+  max-width: 650px;
+  color: #d5e4db;
+}
+.page-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  margin-top: 28px;
+}
+.page-grid .tile img {
+  height: 185px;
+}
+.cta {
+  padding: 22px;
+  margin-top: 30px;
+  background: #edf1ea;
+  border-radius: 10px;
+  font-weight: 600;
+}
+@media (max-width: 760px) {
+  .nav-inner {
+    align-items: flex-start;
+    flex-direction: column;
+    padding-block: 18px;
+  }
+  .nav-links {
+    gap: 12px;
+  }
+  .hero-grid {
+    grid-template-columns: 1fr;
+  }
+  .feature-layout {
+    display: flex;
+    flex-direction: column;
+  }
+  .page-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .hero h1 {
+    font-size: 39px;
+  }
+  .page-hero h1 {
+    font-size: 37px;
+  }
+}
+.card-highlight {
+  border: 2px solid #d7a45b;
+}
+
+#hero-action {
+  background: #bd4d58;
+}
+@media (max-width: 760px) {
+  .nav-inner {
+    flex-direction: row;
+  }
+  .nav-links {
+    flex-wrap: nowrap;
+  }
+}

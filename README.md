@@ -19,13 +19,23 @@ El sitio incluye la página Inicio y las plantillas `pages/menu.html`, `pages/eq
 | Estudiante                 | Página asignada | Rama   | Commits principales                                             |
 | -------------------------- | --------------- | ------ | --------------------------------------------------------------- |
 | Luis Felipe Ortega Bolaños | menu.html       | ramaf1 | La pagina de menu completa y funcional junto al css que utiliza |
+| Gerald José Urbina Quesada | equipo.html       | ramaf2 | La pagina de equipo completa y funcional junto al css que utiliza |
 
 ## Evidencias Git
 
 | Funcionalidad/corrección | PR hacia develop | Revisor | Resultado de merge / conflicto si ocurrió |
 | ------------------------ | ---------------- | ------- | ----------------------------------------- |
 |                          |                  |         |                                           |
+| Corrección de bugs generales de la página | #1 desde ramaBugs | Gerald Urbina | Merge exitoso, sin conflictos |
+| Página menu.html completa, CSS y README del feature 1 | #2 desde ramaf1 | Gerald Urbina | Merge exitoso, conflicto pequeño con la conexion dentro de index.html pero solucionado sin problema |
+| Página equipo.html con cards, navegación entre roles, etapas y flujo de trabajo | #3 desde ramaf2 | Luis Felipe Ortega | Merge exitoso, sin conflictos |
+| Corrección de imágenes y ajustes de HTML y CSS | #4 desde ramaf1 | Gerald Urbina | Se actualizó ramaf1 con develop antes del merge, merge exitoso |
 
 ## Verificación final
 
 Registrar las pruebas de funcionamiento a 1280 px y 375 px, enlaces y páginas.
+![alt text](image-7.png)
+![alt text](image-8.png)
+![alt text](image-9.png)
+![alt text](image-10.png)
+![alt text](image-11.png)

@@ -5,10 +5,18 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>SAVIA | Nuestro equipo</title>
     <link href="../css/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/equipo.css" />
   </head>
   <body>
     <header class="site-header">
-      <!-- Espacio de trabajo: está pendiente de implementación. -->
+      <div class="container nav-inner">
+        <a class="logo" href="../index.html"> SAVIA. </a>
+        <nav aria-label="Navegaci&oacute;n principal" class="nav-links">
+          <a class="nav-contact" href="../index.html"> Inicio </a>
+          <a class="nav-contact" href="menu.html"> Nuestra carta </a>
+          <a aria-current="page" href="equipo.html">Nuestro Equipo</a>
+        </nav>
+      </div>
     </header>
 
     <section class="page-hero">
@@ -18,8 +26,71 @@
         <p>Las personas detr&aacute;s de cada experiencia.</p>
       </div>
     </section>
+
     <main class="section container">
-      <!-- Espacio de trabajo: esta página está pendiente de implementación. -->
+      <section class="section container">
+        <div class="section-heading">
+          <span class="eyebrow"> Nuestro Equipo </span>
+          <h2>Talentos y conocimientos en un mismo lugar</h2>
+          <p class="muted">
+            Equipo completamente preparado para preparar obras gastronómicas de
+            alta calidad
+          </p>
+        </div>
+        <nav class="nav-roles">
+          <a href="#cocineroPrincipal">Cocinero Principal</a>
+          <a href="#cocineroSecundario">Cocinero Secundario</a>
+          <a href="#mesero">Mesero</a>
+        </nav>
+        <div class="feature-layout">
+          <article class="card" id="cocineroPrincipal">
+            <img
+              alt="Cocinero Principal"
+              src="../images/cocineroPrincipal.jpg"
+            />
+            <div class="card-copy">
+              <span class="etapa">Etapa 2</span>
+              <h3>Cocinero Principal</h3>
+              <p>
+                Dirige al equipo, cocina el plato y le da el toque final antes
+                de servirlo
+              </p>
+            </div>
+          </article>
+          <article class="card" id="cocineroSecundario">
+            <img
+              alt="Cocinero Secundario"
+              src="../images/cocineroSecundario.jpg"
+            />
+            <div class="card-copy">
+              <span class="etapa">Etapa 1</span>
+              <h3>Cocinero Secundario</h3>
+              <p>El encargado de hacer las preparaciones iniciales del plato</p>
+            </div>
+          </article>
+          <article class="card" id="mesero">
+            <img alt="Mesero" src="../images/Mesero.png" />
+            <div class="card-copy">
+              <span class="etapa">Etapa 3</span>
+              <h3>Mesero</h3>
+              <p>Encargado de llevar el plato sano y salvo hasta tu mesa</p>
+            </div>
+          </article>
+        </div>
+        <div class="statement">
+          <p class="statement-title" id="statement-title">
+            Así colaboramos para crear cada plato
+          </p>
+          <p>
+            Todo empieza con el cocinero secundario, que prepara y alista los
+            ingredientes. Luego el cocinero principal, que dirige la cocina,
+            toma esa base, cocina el plato y le da el toque final. Por último,
+            el mesero lo lleva a tu mesa y se asegura de que tengás una buena
+            experiencia.
+          </p>
+          <img src="../images/pasantes.jpg" alt="pasantes" />
+        </div>
+      </section>
     </main>
     <footer class="site-footer">
       <div class="container footer-inner">

@@ -1,3 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap");
+:root {
+  --forest: #183c33;
+  --cream: #faf7f0;
+  --gold: #d7a45b;
+  --ink: #27352f;
+  --mute: #5f6963;
+}
+
+* {
+  box-sizing: border-box;
+}
 
 .feature-layout {
   display: flex;
@@ -17,6 +29,7 @@
   width: 45%;
   height: 450px;
   object-fit: cover;
+  object-position: top;
 }
 .card-copy {
   padding: 30px;
@@ -31,15 +44,47 @@
 
 .nav-roles{
   display: flex;
-  gap: 10px;
-  margin-top: 20px;
+  align-items: center;
+  gap: 23px;
+  flex-wrap: wrap;
 }
 
 .nav-roles a{
-  padding: 8px 16px;
-  color: black;
-  border-radius: 15px;
-  text-decoration: none;
+ font-size: 14px;
+  font-weight: 700;
+}
+
+.nav-roles a:hover,.nav a[aria-current="page"] {
+  color: #a17034;
+}
+
+.etapa{
+  color: var(--gold);
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
+.statement{
+  background: #ecf1e9;
+  padding: 26px;
+  border-radius: 5px;
+  margin-top: 38px;
+  border-left: none;
+}
+
+.statement img{
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+.statement p {
+  margin: 0;
+}
+.statement-title {
+  font-size: 19px;
+  font-weight: 700;
+  color: var(--forest);
 }
 
 @media(max-width: 800px){

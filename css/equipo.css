@@ -28,6 +28,7 @@
 .card img {
   width: 45%;
   height: 450px;
+  flex-shrink: 0;
   object-fit: cover;
   object-position: top;
 }
@@ -54,8 +55,7 @@
   font-weight: 700;
 }
 
-.nav-roles a:hover,
-.nav a[aria-current="page"] {
+.nav-roles a:hover {
   color: #a17034;
 }
 
@@ -75,6 +75,7 @@
 }
 
 .statement img {
+  width: 100%;
   margin-top: 20px;
   border-radius: 10px;
 }
@@ -89,12 +90,26 @@
 }
 
 @media (max-width: 800px) {
+  .card img {
+    height: 350px;
+  }
+}
+
+@media (max-width: 800px) {
   .card {
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
   }
   .card img {
     width: 100%;
     height: 300px;
+  }
+
+  .card-copy{
+    padding: 20px;
+  }
+
+  .card-copy h3{
+    font-size: 22px;
   }
 }
